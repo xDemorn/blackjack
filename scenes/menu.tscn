@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://c88fyy7vfnm3g"]
+
+[ext_resource type="Script" uid="uid://cvjtx4nl1ep88" path="res://scripts/menu.gd" id="1_yqeox"]
+
+[node name="menu" type="CanvasLayer" unique_id=884807077]
+script = ExtResource("1_yqeox")
+
+[node name="btn_play" type="Button" parent="." unique_id=580638875]
+offset_left = 97.0
+offset_top = 76.0
+offset_right = 144.0
+offset_bottom = 107.0
+text = "PLAY"
+
+[node name="btn_quit" type="Button" parent="." unique_id=1379679708]
+offset_left = 98.0
+offset_top = 135.0
+offset_right = 145.0
+offset_bottom = 166.0
+text = "QUIT"
+
+[connection signal="pressed" from="btn_play" to="." method="_on_btn_play_pressed"]
+[connection signal="pressed" from="btn_quit" to="." method="_on_btn_quit_pressed"]
